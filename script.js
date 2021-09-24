@@ -3,12 +3,6 @@ function compute()
     //variable for principal
     var principal = document.getElementById("principal").value;
 
-    //checks if principal is less than or equal to 0
-    if(principal <= 0)
-    {
-        alert("Enter a positive number");
-        document.getElementById("principal").focus;
-    }
     //variable for rate
     var rate = document.getElementById("rate").value;
     //variable for years
@@ -25,5 +19,15 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
+}
+
+//Check for positive values
+function validateAmount() {
+    var principal = document.getElementById("principal").value;
+    if(parseInt(principal) <= 0)
+    {
+        alert("Enter a positive number");
+        document.getElementById("principal").focus;
+    }
 }
         
