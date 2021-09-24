@@ -9,6 +9,10 @@ h1{
     font-family:verdana;
 }
 
+.highlight {
+  background-color: yellow;
+}
+
 .maindiv {
     background-color:white;
     color:black;
